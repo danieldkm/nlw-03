@@ -18,7 +18,7 @@ export default {
     const orphanage = await orphanagesRepository.findOneOrFail(id, {
       relations: ['images']
     });
-    response.json(orphanage);
+    response.json(orphanages_view.render(orphanage));
   },
   async create (request: Request, response: Response) {
     const {name,
@@ -43,7 +43,7 @@ export default {
         about,
         instructions,
         opening_hours,
-        open_on_weekends,
+        open_on_weekends,//: open_on_weekends === 'true',
         images
       };
 
@@ -60,11 +60,13 @@ export default {
         })).required()
       });
 
-      await schema.validate(data, {
+      const castData = schema.cast(data) as Orphanage;
+
+      await schema.validate(castData, {
         abortEarly: false // retornar a mensagem de todos os campos invalidos
       });
     
-      const orphanage = orphanagesRepository.create(data);
+      const orphanage = orphanagesRepository.create(castData);
     
       await orphanagesRepository.save(orphanage);
     
