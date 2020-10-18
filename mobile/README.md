@@ -23,4 +23,11 @@ yarn add react-native-reanimated react-native-gesture-handler react-native-scree
 npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
 # and
 yarn add @react-navigation/stack
+
+yarn add axios
+
+# android - com emulador - if u want use localhost on api request
+adb reverse tcp:3333 tcp:3333
+
+expo install expo-image-picker
 ```
