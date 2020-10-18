@@ -36,7 +36,7 @@ export default function CreateOrphanage() {
       console.log('positionUser2', positionUser)
     }
     console.log('positionUser', positionUser)
-  }, [])
+  }, [positionUser])
 
   function getPosition(position: any) {
     setPositionUser([position.coords.latitude, position.coords.longitude])

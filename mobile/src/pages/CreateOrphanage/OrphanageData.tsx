@@ -13,10 +13,6 @@ interface OrphanageDataRouteParams {
   }
 }
 
-interface Orphanage {
-
-}
-
 export default function OrphanageData() {
   const [name, setName] = useState('');
   const [about, setAbout] = useState('');

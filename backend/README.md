@@ -31,4 +31,11 @@ yarn add -D @types/yup
 
 yarn add cors
 yarn add -D @types/cors
+
+# login
+yarn add bcrypt
+yarn add -D @types/bcrypt
+yarn add jsonwebtoken
+yarn add -D @types/jsonwebtoken
+yarn add dotenv
 ```

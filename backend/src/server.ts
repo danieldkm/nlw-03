@@ -1,8 +1,9 @@
 import express from 'express';
 import path from 'path';
 import cors from 'cors';
+import dotenv from 'dotenv';
+dotenv.config();
 import 'express-async-errors';
-
 import './database/connection';
 
 import routes from './routes';

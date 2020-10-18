@@ -30,4 +30,7 @@ yarn add axios
 adb reverse tcp:3333 tcp:3333
 
 expo install expo-image-picker
+
+# armazenar token, user, etc
+yarn add @react-native-community/async-storage
 ```
