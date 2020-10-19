@@ -1,0 +1,247 @@
+#page-signin {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+#page-signin section { 
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-signin .content-landing {
+  width: 100vw;
+  max-width: 260px;
+
+  height: 100vh;
+  max-height: 402px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.content-landing .location {
+  width: 100vw;
+
+  font-size: 24px;
+  line-height: 34px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-signin aside {
+  width: 100vw;
+  max-width: 520px;
+  height: 100vh;
+  background: #fff;
+  /* background: linear-gradient(329.54deg, #fff 0%, #00C7C7 100%); */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-signin aside .back-button {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  
+  bottom: 44%;
+  left: 70%;
+
+  border: 0;
+
+  background: #EBF2F5;
+  border-radius: 16px;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-signin aside .back-button:hover {
+  background: #D3E2E5;
+}
+
+#page-signin aside main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form.signin-form {
+  width: 360px;
+
+  overflow: hidden;
+}
+
+form.signin-form fieldset {
+  border: 0;
+}
+
+form.signin-form fieldset legend {
+  width: 100%;
+
+  font-size: 32px;
+  line-height: 34px;
+  color: #5C8599;
+  font-weight: 700;
+
+  margin-bottom: 40px;
+}
+
+form.signin-form .input-block + .input-block {
+  margin-top: 24px;
+}
+
+form.signin-form .input-block label {
+  display: flex;
+  color: #8FA7B3;
+  margin-bottom: 8px;
+  line-height: 24px;
+}
+
+form.signin-form .input-block label span {
+  font-size: 14px;
+  color: #8FA7B3;
+  margin-left: 24px;
+  line-height: 24px;
+}
+
+form.signin-form .input-block input,
+form.signin-form .input-block textarea {
+  width: 100%;
+  background: #F5F8FA;
+  border: 1px solid #D3E2E5;
+  border-radius: 20px;
+  outline: none;
+  color: #5C8599;
+}
+
+form.signin-form .input-block input {
+  height: 64px;
+  padding: 0 16px;
+}
+
+form.signin-form .input-block textarea {
+  min-height: 120px;
+  max-height: 240px;
+  resize: vertical;
+  padding: 16px;
+  line-height: 28px;
+}
+
+form.signin-form .input-block-row  {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+form.signin-form .input-block-row .input-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form.signin-form .input-block-row .input-block input {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  
+}
+
+form.signin-form .input-block-row .input-block .checkmark {
+  height: 24px;
+  width: 24px;
+  margin: 0;
+  margin-left: 0;
+
+  background-color: #F5F8FA;
+  border: 1px solid #D3E2E5;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-right: 16px;
+
+}
+
+/* On mouse-over, add a grey background color */
+form.signin-form .input-block-row .input-block input ~ .checkmark {
+  background-color: #F5F8FA;
+}
+
+/* When the checkbox is checked, add a blue background */
+form.signin-form .input-block-row .input-block input:checked ~ .checkmark {
+  background-color: #37C77F;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+form.signin-form .input-block-row .input-block .checkmark:after {
+  content: "";
+  position: relative;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+form.signin-form .input-block-row .input-block input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+form.signin-form .input-block-row .input-block .checkmark:after {
+  left: 7px;
+  top: 5px;
+  width: 4px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+form.signin-form button.confirm-button {
+  margin-top: 64px;
+
+  width: 100%;
+  height: 64px;
+  border: 0;
+  cursor: pointer;
+  background: #3CDC8C;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-weight: 800;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.2s;
+}
+
+form.signin-form button.confirm-button svg {
+  margin-right: 16px;
+}
+
+form.signin-form button.confirm-button:hover {
+  background: #36CF82;
+}

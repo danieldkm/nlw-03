@@ -1,0 +1,72 @@
+#page-create-orphanage-done {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(329.54deg, #37C77F 0%, #37C77F 100%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-create-orphanage-done .content-done {
+  position: relative;
+
+  width: 100%;
+  max-width: 1100px;
+
+  height: 100%;
+  max-height: 680px;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: url('../../images/done.svg') no-repeat 100% center;
+}
+
+#page-create-orphanage-done .content-done .section-block  {
+  height: 100%;
+  max-width: 392px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-create-orphanage-done .content-done .section-block strong {
+  font-size: 80px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+#page-create-orphanage-done .content-done .section-block span {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+#page-create-orphanage-done .content-done .section-block a {
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
+
+  text-decoration: none;
+
+  width: 243px;
+  height: 64px;
+  background: #31B272;
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.2s;
+}
+
+#page-create-orphanage-done .content-done .section-block a:hover {
+  background: #3BD689;
+}

@@ -6,9 +6,9 @@ import {useLocation} from 'react-router-dom';
 
 import {useAuth} from '../contexts/auth';
 
-import AuthRoutes from './auth.routes';
+// import AuthRoutes from './auth.routes';
 import AppRoutes from './app.routes';
-import Norestrict from './norestrict.routes';
+// import Norestrict from './norestrict.routes';
 
 const Routes: React.FC = () => {
   const location = useLocation();
@@ -27,18 +27,19 @@ const Routes: React.FC = () => {
       </div>
     )
   }
+  return <AppRoutes/>;
 
-  if(location.pathname.includes('dashboard')) {
-    console.log('area restrita')
-    console.log('signed', signed);
-    // return signed ? (<AppRoutes/>) : (<AuthRoutes/>);
-    return <AppRoutes/>;
-  } else if (location.pathname.includes('signin')) {
-    console.log('area restrita')
-    console.log('signed', signed);
-    return <AuthRoutes/>;
-  }
-  return <Norestrict/>;
+  // if(location.pathname.includes('dashboard')) {
+  //   console.log('area restrita')
+  //   console.log('signed', signed);
+  //   // return signed ? (<AppRoutes/>) : (<AuthRoutes/>);
+  //   return <AppRoutes/>;
+  // } else if (location.pathname.includes('signin')) {
+  //   console.log('area restrita')
+  //   console.log('signed', signed);
+  //   return <AuthRoutes/>;
+  // }
+  // return <Norestrict/>;
 }
 
 export default Routes;

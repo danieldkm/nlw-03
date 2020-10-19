@@ -7,12 +7,12 @@ const Dashboard: React.FC = () => {
 
   const {signOut, user, signed} = useAuth();
   
-  useEffect(() => {
-    console.log('signed', signed);
-    if(!signed) {
-      history.push('signin');
-    }
-  }, [history, signed])
+  // useEffect(() => {
+  //   console.log('signed', signed);
+  //   if(!signed) {
+  //     history.push('signin');
+  //   }
+  // }, [history, signed])
 
   function handleSignOut() {
     signOut();
